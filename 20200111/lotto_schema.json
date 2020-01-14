@@ -1,0 +1,115 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "lotto"
+  ],
+  "properties": {
+    "lotto": {
+      "$id": "#/properties/lotto",
+      "type": "object",
+      "title": "The Lotto Schema",
+      "required": [
+        "payNo",
+        "lottoId",
+        "vipInfo",
+        "winning-numbers",
+        "winners"
+      ],
+      "properties": {
+        "payNo": {
+          "$id": "#/properties/lotto/properties/payNo",
+          "type": "string",
+          "title": "The Payno Schema",
+          "default": "",
+          "examples": [
+            "GUA-1578906002639"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "lottoId": {
+          "$id": "#/properties/lotto/properties/lottoId",
+          "type": "integer",
+          "title": "The Lottoid Schema",
+          "default": 0,
+          "examples": [
+            5
+          ],
+          "multipleOf": 5.0,
+          "minimum": 5.0,
+          "maximum": 5.0
+        },
+        "vipInfo": {
+          "$id": "#/properties/lotto/properties/vipInfo",
+          "type": "string",
+          "title": "The Vipinfo Schema",
+          "default": "",
+          "examples": [
+            "ewogICAgICAgICJsb3R0byI6IHsKICAgICAgICAgICJsb3R0b0lkIjogNSwKICAgICAgICAgICJ3aW5uaW5nLW51bWJlcnMiOiBbCiAgICAgICAgICAgIDQ1LAogICAgICAgICAgICAzCiAgICAgICAgICBdLAogICAgICAgICAgIndpbm5lcnMiOiBbCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAid2lubmVySWQiOiAyMywKICAgICAgICAgICAgICAibnVtYmVycyI6IFsKICAgICAgICAgICAgICAgIDQ1LAogICAgICAgICAgICAgICAgMzQKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgIHsKICAgICAgICAgICAgICAid2lubmVySWQiOiA1NCwKICAgICAgICAgICAgICAibnVtYmVycyI6IFsKICAgICAgICAgICAgICAgIDE4LAogICAgICAgICAgICAgICAgMjIKICAgICAgICAgICAgICBdCiAgICAgICAgICAgIH0KICAgICAgICAgIF0KICAgICAgICB9CiAgICAgIH0="
+          ],
+          "pattern": "^(.*)$"
+        },
+        "winning-numbers": {
+          "$id": "#/properties/lotto/properties/winning-numbers",
+          "type": "array",
+          "title": "The Winning-numbers Schema",
+          "items": {
+            "$id": "#/properties/lotto/properties/winning-numbers/items",
+            "type": "integer",
+            "title": "The Items Schema",
+            "default": 0,
+            "examples": [
+              15,
+              33
+            ]
+          }
+        },
+        "winners": {
+          "$id": "#/properties/lotto/properties/winners",
+          "type": "array",
+          "title": "The Winners Schema",
+          "items": {
+            "$id": "#/properties/lotto/properties/winners/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+              "winnerId",
+              "numbers"
+            ],
+            "properties": {
+              "winnerId": {
+                "$id": "#/properties/lotto/properties/winners/items/properties/winnerId",
+                "type": "integer",
+                "title": "The Winnerid Schema",
+                "default": 0,
+                "examples": [
+                  20
+                ]
+              },
+              "numbers": {
+                "$id": "#/properties/lotto/properties/winners/items/properties/numbers",
+                "type": "array",
+                "title": "The Numbers Schema",
+                "items": {
+                  "$id": "#/properties/lotto/properties/winners/items/properties/numbers/items",
+                  "type": "integer",
+                  "title": "The Items Schema",
+                  "default": 0,
+                  "examples": [
+                    18,
+                    22
+                  ],
+                  "minimum": 18,
+                  "maximum": 70
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
