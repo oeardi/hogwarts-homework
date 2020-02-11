@@ -1,0 +1,8 @@
+{
+  "name": "{{name}}",
+  "mobile": "{{mobile}}",
+  "department": [
+    1037
+  ],
+  "userid": "{{userid}}"
+}

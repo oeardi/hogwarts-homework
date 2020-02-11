@@ -1,0 +1,13 @@
+/**
+ * 接口自动化测试框架 - TestNg.xml 方式 - 综合练习：
+ * 1. 使用 TestNg.xml + @Parameters 运行测试用例
+ * 2. 对 xml 参数做初始化处理
+ * 3. 从 mustache.json 模板读取 json 数据，并对根据实际情况，对 {{}} 格式的数据进行修改
+ * 4. 使用 JsonPath 功能对 json 报文中的字段重新赋值
+ * 5. 调用接口，发送请求
+ * <p>
+ * 成员管理 - 创建成员
+ * https://work.weixin.qq.com/api/doc/90002/90151/90814
+ *
+ * @author 冷枫红舞
+ */

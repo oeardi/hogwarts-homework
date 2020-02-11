@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ExampleTest">
+
+    <test name="user_create_case_1">
+
+        <!-- name 参数从模板文件中获取，并通过代码中的 JsonPath 方式实现赋值 -->
+        <!-- <parameter name="name" value="罗小黑的小嘿咻 random2"/>-->
+        <parameter name="mobile" value="134random8"/>
+        <parameter name="userid" value="random2"/>
+
+        <classes>
+            <class name="com.hogwarts.service.testcase.example.ExampleTestNgXmlTest"></class>
+        </classes>
+    </test>
+
+    <listeners>
+        <!-- <listener class-name="com.config.ExtentTestNGIReporterListener"></listener>-->
+    </listeners>
+
+</suite>
