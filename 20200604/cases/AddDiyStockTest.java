@@ -159,9 +159,7 @@ public class AddDiyStockTest {
              */
             quotationPage = new QuotationEditPage().returnQuotationPage(driver, action_close_id);
             log.info("[Test Case] {} 只股票添加完毕，客户端停留在 [行情] 页面。", list.size());
-
         }
-
     }
 
     @AfterClass
